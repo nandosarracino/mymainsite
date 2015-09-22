@@ -1,22 +1,41 @@
 <!-- base.html -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <link rel="stylesheet" type = "text/css" href="{{ STATIC_URL }}static/css/main.css">
+
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600' rel='stylesheet' type='text/css'> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>d3site</title>
 
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- font awesome -->  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
   <!-- Placeholder for page-level css includes -->
   {% block css_include %} {% endblock css_include %}
+
 </head>
 
-
 <body>
-  <p>A very simple header.</p>
+
   <!-- Placeholder Page content -->
-    <div>{% block content_container %} {% endblock content_container %}</div>
+    <div class = "container-fluid">{% block content_container %} {% endblock content_container %}</div>
   <!-- End page content -->
+
+<!--Footer-->
+
+
 </body>
 </html>
