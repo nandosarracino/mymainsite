@@ -1,12 +1,27 @@
 body {
-	background-color: #808080;
-}
-
-.nav h1 {
-	color: #ffffff;
+	
 }
 
 .nav a {
 	color: #ffffff;
 	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
 }
+
+.nav p{
+	color: #ffffff;
+}
+
+.bio-box h3 {
+	color: #ffffff;
+}
+
+.bio-box p {
+	color: #ffffff;
+}
+
+.me h2 {
+	color: #ffffff;
+}
+

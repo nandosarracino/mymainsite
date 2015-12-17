@@ -104,9 +104,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    /home/nandosarracino/mysite
-  )
+STATICFILES_DIRS = (PROJECT_DIR.child('static'),)
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',

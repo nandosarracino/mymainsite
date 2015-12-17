@@ -16,10 +16,17 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from mainsite.views import HomeView
+from mainsite.views import BaseView
+from mainsite.views import port1View, port2View, port3View, port4View, port5View, port6View
 
 urlpatterns = [
-	url(r'^$', HomeView.as_view(), name ='home'),
+	url(r'^$', BaseView.as_view(), name ='base'),
+	url(r'^port1/$', port1View.as_view(), name = 'port1'),
+    url(r'^port2/$', port2View.as_view(), name = 'port2'),
+    url(r'^port3/$', port3View.as_view(), name = 'port3'),
+    url(r'^port4/$', port4View.as_view(), name = 'port4'),
+    url(r'^port5/$', port5View.as_view(), name = 'port5'),
+    url(r'^port6/$', port6View.as_view(), name = 'port6'),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
